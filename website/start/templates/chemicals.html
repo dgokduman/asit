@@ -1,0 +1,738 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Kimyasallar - ASİT TİCARET</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}?v=1.0">
+
+  <!-- Favicons -->
+  <link href='{% static "assets/img/favicon.png" %}' rel="icon">
+  <link href='{% static "assets/img/apple-touch-icon.png" %}' rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href='{% static "assets/vendor/bootstrap/css/bootstrap.min.css" %}' rel="stylesheet">
+  <link href='{% static "assets/vendor/bootstrap-icons/bootstrap-icons.css" %}' rel="stylesheet">
+  <link href='{% static "assets/vendor/aos/aos.css" %}' rel="stylesheet">
+  <link href='{% static "assets/vendor/fontawesome-free/css/all.min.css" %}' rel="stylesheet">
+  <link href='{% static "assets/vendor/glightbox/css/glightbox.min.css" %}' rel="stylesheet">
+  <link href='{% static "assets/vendor/swiper/swiper-bundle.min.css" %}' rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href='{% static "assets/css/main.css" %}' rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: UpConstruction
+  * Template URL: https://bootstrapmade.com/upconstruction-bootstrap-construction-website-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<style>
+  #whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    background-color: green;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+#whatsapp-button img {
+    width: 50px;
+    height: 50px;
+}
+
+</style>
+
+<body class="services-page scrolled">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="/" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <a href="/" class=" d-flex align-items-center">
+          <img src='{% static "assets/img/unnamed.png" %}' alt="" style="width: 80%; height: 80%; margin-top: 4px;" >
+      </a>
+
+      <nav id="navmenu" class="navmenu" style="padding: 20px;">
+        <ul>
+          <li><a href="/">ANASAYFA</a></li>
+          <li><a href="/hakkinda/">HAKKIMIZDA</a></li>
+          <li><a href="/ekibimiz/">EKİBİMİZ</a></li>
+          <li class="dropdown"><a href="/kimyasallar/" class="active"><span>ÜRÜNLERİMİZ</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a ref="/kimyasallar#features-tab-1" class="tab-link">ASİTLER</a></li>
+              <li><a ref="/kimyasallar#features-tab-3" class="tab-link">BAZLAR</a></li>
+              <li><a ref="/kimyasallar#features-tab-4" class="tab-link">DİĞER</a></li>
+            </ul>
+          </li>
+          <li><a href="/siparis/">ONLINE SİPARİŞ</a></li>
+          <li><a href="/galeri/">GALERİ</a></li>
+          <li><a href="/iletisim/">İLETİŞİM</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+
+  
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background" style="background-image: url(/static/assets/img/chem.png);">
+      <div class="container position-relative">
+        <h1>ÜRÜNLERİMİZ</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="/">Anasayfa</a></li>
+            <li class="current">Ürünlerimiz</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+<!-- Features Section -->
+<section id="features" class="features section" style="padding: 30px;">
+ <!--
+  <div class="center-wrapper">
+    <div class="search-wrapper" style="position: relative; width: 400px;">
+        <form id="searchForm" style="display: flex; flex-direction: column; align-items: center;">
+            <input type="text" id="searchTerm" name="searchTerm" placeholder="Arama yapın..." required style="border-radius: 25px; width: 100%; padding: 10px;">
+        </form>
+        <div id="suggestions" style="border: 1px solid rgba(0, 0, 0, 0.2); border-radius: 5px; margin-top: 5px; max-height: 300px; overflow-y: auto; display: none; background-color: rgba(255, 255, 255, 1); position: absolute; top: 100%; left: 0; width: 100%; z-index: 1;"></div> 
+    </div>
+</div>
+-->
+
+  <div id="results">
+    <ul class="nav nav-tabs row g-2 d-flex justify-content-center" style="width: 100%;" data-aos="fade-up" data-aos-delay="100" role="tablist">
+        <li class="nav-item col-4" role="presentation">
+            <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#features-tab-1" aria-selected="true" role="tab">
+                <h4>ASİTLER</h4>
+            </a>
+        </li><!-- End tab nav item -->
+
+        <li class="nav-item col-4" role="presentation">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-2" aria-selected="false" tabindex="-1" role="tab">
+                <h4>BAZLAR</h4>
+            </a><!-- End tab nav item -->
+        </li>
+
+        <li class="nav-item col-4" role="presentation">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-3" aria-selected="false" tabindex="-1" role="tab">
+                <h4>DİĞER</h4>
+            </a>
+        </li><!-- End tab nav item -->
+    </ul>
+</div>
+
+    
+    </ul>
+
+    </ul>
+    
+
+    <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
+
+      <div class="tab-pane fade active show" id="features-tab-1" role="tabpanel">
+        <div class="row">
+          <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column ">
+            <div class="text-center" style="margin-left: -40px;">
+              <h2>ASİTLER</h2>
+            </div>
+            
+            <ul>
+              <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+                <li style="flex: 0 0 calc(50% - 10px); margin-bottom: 10px; display: flex; align-items: center;">
+                  <img src='{% static "assets/img/icons/icon1.png" %}' style="width: 35px; height: 35px;">
+                  <span>ASETİK ASİT</span>
+                </li>
+                
+                <li style="flex: 0 0 calc(50% - 10px); margin-bottom: 10px; display: flex; align-items: center;">
+                  <img src='{% static "assets/img/icons/icon1.png" %}' style="width: 35px; height: 35px;">
+                  <span>BORİK ASİT</span>
+                </li>
+                
+                <li style="flex: 0 0 calc(50% - 10px); margin-bottom: 10px; display: flex; align-items: center;">
+                  <img src='{% static "assets/img/icons/icon1.png" %}' style="width: 35px; height: 35px;">
+                  <span>FORMİK ASİT</span>
+                </li>
+                <li style="flex: 0 0 calc(50% - 10px); margin-bottom: 10px; display: flex; align-items: center;">
+                  <img src='{% static "assets/img/icons/icon1.png" %}' style="width: 35px; height: 35px;">
+                  <span>FOSFORİK ASİT</span>
+                </li>
+                <li style="flex: 0 0 calc(50% - 10px); margin-bottom: 10px; display: flex; align-items: center;">
+                  <img src='{% static "assets/img/icons/icon1.png" %}' style="width: 35px; height: 35px;">
+                  <span>HİDROFLORİK ASİT</span>
+                </li>
+                <li style="flex: 0 0 calc(50% - 10px); margin-bottom: 10px; display: flex; align-items: center;">
+                  <img src='{% static "assets/img/icons/icon1.png" %}' style="width: 35px; height: 35px;">
+                  <span>HİDROKLORİK ASİT</span>
+                </li>
+                <li style="flex: 0 0 calc(50% - 10px); margin-bottom: 10px; display: flex; align-items: center;">
+                  <img src='{% static "assets/img/icons/icon1.png" %}' style="width: 35px; height: 35px;">
+                  <span>KROMİK ASİT</span>
+                </li>
+                <li style="flex: 0 0 calc(50% - 10px); margin-bottom: 10px; display: flex; align-items: center;">
+                  <img src='{% static "assets/img/icons/icon1.png" %}' style="width: 35px; height: 35px;">
+                  <span>NİTRİK ASİT</span>
+                </li>
+                <li style="flex: 0 0 calc(50% - 10px); margin-bottom: 10px; display: flex; align-items: center;">
+                  <img src='{% static "assets/img/icons/icon1.png" %}' style="width: 35px; height: 35px;">
+                  <span>OKSALİK ASİT</span>
+                </li>
+                <li style="flex: 0 0 calc(50% - 10px); margin-bottom: 10px; display: flex; align-items: center;">
+                  <img src='{% static "assets/img/icons/icon1.png" %}' style="width: 35px; height: 35px;">
+                  <span>SÜLFÜRİK ASİT</span>
+                </li>
+                <li style="flex: 0 0 calc(50% - 10px); margin-bottom: 10px; display: flex; align-items: center;">
+                  <img src='{% static "assets/img/icons/icon1.png" %}' style="width: 35px; height: 35px;">
+                  <span>SİTRİK ASİT</span>
+                </li>
+                <li style="flex: 0 0 calc(50% - 10px); margin-bottom: 10px; display: flex; align-items: center;">
+                  <img src='{% static "assets/img/icons/icon1.png" %}' style="width: 35px; height: 35px;">
+                  <span>TARTARİK ASİT</span>
+                </li>
+                <li style="flex: 0 0 calc(50% - 10px); margin-bottom: 10px; display: flex; align-items: center;">
+                  <img src='{% static "assets/img/icons/icon1.png" %}' style="width: 35px; height: 35px;">
+                  <span>TAŞ ASİTİ</span>
+                </li>
+                <li style="flex: 0 0 calc(50% - 10px); margin-bottom: 10px; display: flex; align-items: center;">
+                  <img src='{% static "assets/img/icons/icon1.png" %}' style="width: 35px; height: 35px;">
+                  <span>HİDROJEN PEROKSİT</span>
+                </li>
+                
+                <!-- İstediğiniz kadar <li> öğesi ekleyebilirsiniz. -->
+              </div>
+            </ul>
+                       
+          </div>
+          <div class="col-lg-6 order-1 order-lg-2 text-center">
+            <img src='{% static "assets/img/features-1.jpg" static %}' alt="" class="img-fluid">
+          </div>
+        </div>
+      </div><!-- End tab content item -->
+
+      <div class="tab-pane fade show" id="features-tab-2" role="tabpanel">
+        <div class="row">
+          <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column ">
+            <div class="text-center" style="margin-left: -40px;">
+              <h2>BAZLAR</h2>
+            </div><!-- Tab Content -->
+            
+            <ul>
+              <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+                <li style="flex: 0 0 calc(50% - 10px); margin-bottom: 10px; display: flex; align-items: center;">
+                  <img src='{% static "assets/img/icons/icon2.png" %}' style="width: 40px; height: 40px; padding-right: 5px;">
+                  <span>AMONYUM BİFLÖRÜR</span>
+                </li>
+                <li style="flex: 0 0 calc(50% - 10px); margin-bottom: 10px; display: flex; align-items: center;">
+                  <img src='{% static "assets/img/icons/icon2.png" %}' style="width: 40px; height: 40px; padding-right: 5px;">
+                  <span>AMONYUM BİKARBONAT</span>
+                </li>
+                <li style="flex: 0 0 calc(50% - 10px); margin-bottom: 10px; display: flex; align-items: center;">
+                  <img src='{% static "assets/img/icons/icon2.png" %}' style="width: 40px; height: 40px; padding-right: 5px;">
+                  <span>AMONYUM KLORÜR</span>
+                </li>
+                <li style="flex: 0 0 calc(50% - 10px); margin-bottom: 10px; display: flex; align-items: center;">
+                  <img src='{% static "assets/img/icons/icon2.png" %}' style="width: 40px; height: 40px; padding-right: 5px;">
+                  <span>AMONYUM PERSÜLFAT</span>
+                </li>
+                <li style="flex: 0 0 calc(50% - 10px); margin-bottom: 10px; display: flex; align-items: center;">
+                  <img src='{% static "assets/img/icons/icon2.png" %}' style="width: 40px; height: 40px; padding-right: 5px;">
+                  <span>ALÜMİNYÜM SÜLFAT</span>
+                </li>
+                <li style="flex: 0 0 calc(50% - 10px); margin-bottom: 10px; display: flex; align-items: center;">
+                  <img src='{% static "assets/img/icons/icon2.png" %}' style="width: 40px; height: 40px; padding-right: 5px;">
+                  <span>BAKIR SÜLFAT</span>
+                </li>
+                <li style="flex: 0 0 calc(50% - 10px); margin-bottom: 10px; display: flex; align-items: center;">
+                  <img src='{% static "assets/img/icons/icon2.png" %}' style="width: 40px; height: 40px; padding-right: 5px;">
+                  <span>BARYUM KARBONAT</span>
+                </li>
+                <li style="flex: 0 0 calc(50% - 10px); margin-bottom: 10px; display: flex; align-items: center;">
+                  <img src='{% static "assets/img/icons/icon2.png" %}' style="width: 40px; height: 40px; padding-right: 5px;">
+                  <span>BARYUM KLORÜR</span>
+                </li>
+                <li style="flex: 0 0 calc(50% - 10px); margin-bottom: 10px; display: flex; align-items: center;">
+                  <img src='{% static "assets/img/icons/icon2.png" %}' style="width: 40px; height: 40px; padding-right: 5px;">
+                  <span>DEMİR 3 KLORÜR</span>
+                </li>
+                <li style="flex: 0 0 calc(50% - 10px); margin-bottom: 10px; display: flex; align-items: center;">
+                  <img src='{% static "assets/img/icons/icon2.png" %}' style="width: 40px; height: 40px; padding-right: 5px;">
+                  <span>DEMİR SÜLFAT</span>
+                </li>
+                <li style="flex: 0 0 calc(50% - 10px); margin-bottom: 10px; display: flex; align-items: center;">
+                  <img src='{% static "assets/img/icons/icon2.png" %}' style="width: 40px; height: 40px; padding-right: 5px;">
+                  <span>POTASYUM PERSÜLFAT</span>
+                </li>
+                <li style="flex: 0 0 calc(50% - 10px); margin-bottom: 10px; display: flex; align-items: center;">
+                  <img src='{% static "assets/img/icons/icon2.png" %}' style="width: 40px; height: 40px; padding-right: 5px;">
+                  <span>S. HEGZAMETAFOSFAT</span>
+                </li>
+                <li style="flex: 0 0 calc(50% - 10px); margin-bottom: 10px; display: flex; align-items: center;">
+                  <img src='{% static "assets/img/icons/icon2.png" %}' style="width: 40px; height: 40px; padding-right: 5px;">
+                  <span>SODYUM HİDROSÜLFİT</span>
+                </li>
+                <li style="flex: 0 0 calc(50% - 10px); margin-bottom: 10px; display: flex; align-items: center;">
+                  <img src='{% static "assets/img/icons/icon2.png" %}' style="width: 40px; height: 40px; padding-right: 5px;">
+                  <span>SOD. METABİSÜLFİT</span>
+                </li>
+
+                <li style="flex: 0 0 calc(50% - 10px); margin-bottom: 10px; display: flex; align-items: center;">
+                  <img src='{% static "assets/img/icons/icon2.png" %}' style="width: 40px; height: 40px; padding-right: 5px;">
+                  <span>SOD. METABİSÜLFİT</span>
+                </li>
+                <li style="flex: 0 0 calc(50% - 10px); margin-bottom: 10px; display: flex; align-items: center;">
+                  <img src='{% static "assets/img/icons/icon2.png" %}' style="width: 40px; height: 40px; padding-right: 5px;">
+                  <span>SOD. METABİSÜLFİT</span>
+                </li>
+                <li style="flex: 0 0 calc(50% - 10px); margin-bottom: 10px; display: flex; align-items: center;">
+                  <img src='{% static "assets/img/icons/icon2.png" %}' style="width: 40px; height: 40px; padding-right: 5px;">
+                  <span>SOD. METABİSÜLFİT</span>
+                </li>
+                
+                <!-- İstediğiniz kadar <li> öğesi ekleyebilirsiniz. -->
+              </div>
+            </ul>
+                       
+          </div>
+          <div class="col-lg-6 order-1 order-lg-2 text-center">
+            <img src='{% static "assets/img/features-1.jpg" static %}' alt="" class="img-fluid">
+          </div>
+        </div>
+      </div><!-- End tab content item -->
+      <div class="tab-pane fade show" id="features-tab-3" role="tabpanel">
+        <div class="row">
+          <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column ">
+            <div class="text-center" style="margin-left: -40px;">
+              <h2>DİĞER</h2>
+            </div><!-- Tab Content -->
+            
+            <ul>
+              <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+                <li style="flex: 0 0 calc(50% - 10px); margin-bottom: 10px; display: flex; align-items: center;">
+                  <img src='{% static "assets/img/icons/icon3.png" %}' style="width: 40px; height: 40px;">
+                  <span>BONCUK KOSTİK</span>
+                </li>
+                <li style="flex: 0 0 calc(50% - 10px); margin-bottom: 10px; display: flex; align-items: center;">
+                  <img src='{% static "assets/img/icons/icon3.png" %}' style="width: 40px; height: 40px;">
+                  <span>HAFİF SODA</span>
+                </li>
+                <li style="flex: 0 0 calc(50% - 10px); margin-bottom: 10px; display: flex; align-items: center;">
+                  <img src='{% static "assets/img/icons/icon3.png" %}' style="width: 40px; height: 40px;">
+                  <span>SUD KOSTİK sıvı %32</span>
+                </li>
+                <li style="flex: 0 0 calc(50% - 10px); margin-bottom: 10px; display: flex; align-items: center;">
+                  <img src='{% static "assets/img/icons/icon3.png" %}' style="width: 40px; height: 40px;">
+                  <span>SUD KOSTİK sıvı %48</span>
+                </li>
+                <li style="flex: 0 0 calc(50% - 10px); margin-bottom: 10px; display: flex; align-items: center;">
+                  <img src='{% static "assets/img/icons/icon3.png" %}' style="width: 40px; height: 40px;">
+                  <span>SUD KOSTİK payet - boncuk %98</span>
+                </li>
+                <li style="flex: 0 0 calc(50% - 10px); margin-bottom: 10px; display: flex; align-items: center;">
+                  <img src='{% static "assets/img/icons/icon3.png" %}' style="width: 40px; height: 40px;">
+                  <span>SIVI AMONYAK</span>
+                </li>
+                <li style="flex: 0 0 calc(50% - 10px); margin-bottom: 10px; display: flex; align-items: center;">
+                  <img src='{% static "assets/img/icons/icon3.png" %}' style="width: 40px; height: 40px;">
+                  <span>SODYUM HİPOKLORİT</span>
+                </li>
+                
+                </ul>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src='{% static "assets/img/features-1.jpg" static %}' alt="" class="img-fluid">
+              </div>
+            </div>
+            </div>
+
+            <div class="tab-pane fade show" id="features-tab-4" role="tabpanel">
+              <div class="row">
+                <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column ">
+                  <div class="text-center" style="margin-left: -40px;">
+                    <h2>DİĞER</h2>
+                  </div><!-- Tab Content -->
+                  
+                  <ul>
+                    <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+                      <li style="flex: 0 0 calc(50% - 10px); margin-bottom: 10px; display: flex; align-items: center;">
+                        <img src='{% static "assets/img/icons/icon4.png" %}' style="width: 40px; height: 40px;">
+                        <span>BORAKS</span>
+                      </li>
+                      <li style="flex: 0 0 calc(50% - 10px); margin-bottom: 10px; display: flex; align-items: center;">
+                        <img src='{% static "assets/img/icons/icon4.png" %}' style="width: 40px; height: 40px;">
+                        <span>EDTA</span>
+                      </li>
+                      <li style="flex: 0 0 calc(50% - 10px); margin-bottom: 10px; display: flex; align-items: center;">
+                        <img src='{% static "assets/img/icons/icon4.png" %}' style="width: 40px; height: 40px;">
+                        <span>FORMALDEHİT</span>
+                      </li>
+                      <li style="flex: 0 0 calc(50% - 10px); margin-bottom: 10px; display: flex; align-items: center;">
+                        <img src='{% static "assets/img/icons/icon4.png" %}' style="width: 40px; height: 40px;">
+                        <span>KİREÇ</span>
+                      </li>
+                      <li style="flex: 0 0 calc(50% - 10px); margin-bottom: 10px; display: flex; align-items: center;">
+                        <img src='{% static "assets/img/icons/icon4.png" %}' style="width: 40px; height: 40px;">
+                        <span>PAC 10</span>
+                      </li>
+                      <li style="flex: 0 0 calc(50% - 10px); margin-bottom: 10px; display: flex; align-items: center;">
+                        <img src='{% static "assets/img/icons/icon4.png" %}' style="width: 40px; height: 40px;">
+                        <span>PAC 17</span>
+                      </li>
+                      <li style="flex: 0 0 calc(50% - 10px); margin-bottom: 10px; display: flex; align-items: center;">
+                        <img src='{% static "assets/img/icons/icon4.png" %}' style="width: 40px; height: 40px;">
+                        <span>POLİELEKTROLİT</span>
+                      </li>
+                      <li style="flex: 0 0 calc(50% - 10px); margin-bottom: 10px; display: flex; align-items: center;">
+                        <img src='{% static "assets/img/icons/icon4.png" %}' style="width: 40px; height: 40px;">
+                        <span>SODYUM SİYANÜR</span>
+                      </li>
+                      <li style="flex: 0 0 calc(50% - 10px); margin-bottom: 10px; display: flex; align-items: center;">
+                        <img src='{% static "assets/img/icons/icon4.png" %}' style="width: 40px; height: 40px;">
+                        <span>ÜRE</span>
+                      </li>
+                    
+                      <!-- İstediğiniz kadar <li> öğesi ekleyebilirsiniz. -->
+                    </div>
+                  </ul>
+                             
+                </div>
+                <div class="col-lg-6 order-1 order-lg-2 text-center">
+                  <img src='{% static "assets/img/features-1.jpg" static %}' alt="" class="img-fluid">
+                </div>
+              </div>
+            </div><!-- End tab content item -->
+            <div class="tab-pane fade show" id="features-tab-3" role="tabpanel">
+              <div class="row">
+                <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column ">
+                  <div class="text-center" style="margin-left: -40px;"> 
+                    <h2>DİĞER</h2>
+                  </div><!-- Tab Content -->
+                  
+                  <ul>
+                    <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+                      <li style="flex: 0 0 calc(50% - 10px); margin-bottom: 10px; display: flex; align-items: center;">
+                        <img src='{% static "assets/img/icons/icon3.png" %}' style="width: 40px; height: 40px;">
+                        <span>BONCUK KOSTİK</span>
+                      </li>
+                      <li style="flex: 0 0 calc(50% - 10px); margin-bottom: 10px; display: flex; align-items: center;">
+                        <img src='{% static "assets/img/icons/icon3.png" %}' style="width: 40px; height: 40px;">
+                        <span>HAFİF SODA</span>
+                      </li>
+                      <li style="flex: 0 0 calc(50% - 10px); margin-bottom: 10px; display: flex; align-items: center;">
+                        <img src='{% static "assets/img/icons/icon3.png" %}' style="width: 40px; height: 40px;">
+                        <span>SUD KOSTİK sıvı %32</span>
+                      </li>
+                      <li style="flex: 0 0 calc(50% - 10px); margin-bottom: 10px; display: flex; align-items: center;">
+                        <img src='{% static "assets/img/icons/icon3.png" %}' style="width: 40px; height: 40px;">
+                        <span>SUD KOSTİK sıvı %48</span>
+                      </li>
+                      <li style="flex: 0 0 calc(50% - 10px); margin-bottom: 10px; display: flex; align-items: center;">
+                        <img src='{% static "assets/img/icons/icon3.png" %}' style="width: 40px; height: 40px;">
+                        <span>SUD KOSTİK payet - boncuk %98</span>
+                      </li>
+                      <li style="flex: 0 0 calc(50% - 10px); margin-bottom: 10px; display: flex; align-items: center;">
+                        <img src='{% static "assets/img/icons/icon3.png" %}' style="width: 40px; height: 40px;">
+                        <span>SIVI AMONYAK</span>
+                      </li>
+                      <li style="flex: 0 0 calc(50% - 10px); margin-bottom: 10px; display: flex; align-items: center;">
+                        <img src='{% static "assets/img/icons/icon3.png" %}' style="width: 40px; height: 40px;">
+                        <span>SODYUM HİPOKLORİT</span>
+                      </li>
+                      
+                      </ul>
+                    </div>
+                    <div class="col-lg-6 order-1 order-lg-2 text-center">
+                      <img src='{% static "assets/img/features-1.jpg" static %}' alt="" class="img-fluid">
+                    </div>
+                  </div>
+                  </div>
+
+
+  </main>
+
+  <style>
+  
+    /* Formu sarmalayan div'i ortalamak için */
+    .center-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+
+    #searchForm {
+        display: flex;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.9); /* Yarı saydam beyaz */
+        border-radius: 25px;
+        padding: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 400px;
+        position: relative; /* Öneri kutusu için konumlandırma */
+    }
+
+    #searchForm input {
+        flex: 1;
+        border: none;
+        outline: none;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 25px;
+        background-color: rgba(240, 240, 240, 0.9); /* Yarı saydam gri */
+        transition: background-color 0.3s; /* Geçiş efekti */
+    }
+
+    #searchForm input:focus {
+        background-color: rgba(255, 255, 255, 1); /* Tam beyaz odaklandığında */
+    }
+
+    #searchForm button {
+        background-color: #078a46; /* Mavi */
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 25px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    #searchForm button:hover {
+        background-color: #0056b3; /* Daha koyu mavi hover rengi */
+    }
+
+    #suggestions {
+            border: 1px solid rgba(0, 0, 0, 0.2); /* Hafif gölgeli kenar */
+            border-radius: 5px;
+            margin-top: 5px;
+            max-height: 300px; /* Öneri kutusunun yüksekliği */
+            overflow-y: auto; /* Yüksekliği aşarsa kaydırma çubuğu */
+            display: none; /* Başlangıçta gizle */
+            background-color: rgba(255, 255, 255, 1); /* Tam beyaz arka plan */
+            position: absolute; /* Pozisyon ayarı */
+            top: 100%; /* Arama çubuğunun altında konumlandır */
+            left: 0; /* Sol kenar hizalaması */
+            width: 100%; /* Öneri kutusunun genişliği */
+            z-index: 1;
+        }
+
+
+        
+    .suggestion-item {
+        padding: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s; /* Geçiş efekti */
+    }
+
+    .suggestion-item:hover {
+        background-color: rgba(240, 240, 240, 0.8); /* Hover efekti */
+    }
+</style>
+
+
+<script>
+  const suggestions = [
+    { name: "ASETİK ASİT", href: "#features-tab-1" },
+    { name: "BORİK ASİT", href: "#features-tab-1" },
+    { name: "FORMİK ASİT", href: "#features-tab-1" },
+    { name: "FOSFORİK ASİT", href: "#features-tab-1" },
+    { name: "HİDROFLORİK ASİT", href: "#features-tab-1" },
+    { name: "HİDROKLORİK ASİT", href: "#features-tab-1" },
+    { name: "KROMİK ASİT", href: "#features-tab-1" },
+    { name: "NİTRİK ASİT", href: "#features-tab-1" },
+    { name: "OKSALIK ASİT", href: "#features-tab-1" },
+    { name: "SÜLFÜRİK ASİT", href: "#features-tab-1" },
+    { name: "SİTRİK ASİT", href: "#features-tab-1" },
+    { name: "TARTARİK ASİT", href: "#features-tab-1" },
+    { name: "TAŞ ASİTİ", href: "#features-tab-1" },
+    { name: "HİDROJEN PEROKSİT", href: "#features-tab-1" },
+    { name: "AMONYUM BİFLÖRÜR", href: "#features-tab-2" },
+    { name: "AMONYUM BİKARBONAT", href: "#features-tab-2" },
+    { name: "AMONYUM KLORÜR", href: "#features-tab-2" },
+    { name: "AMONYUM PERSÜLFAT", href: "#features-tab-2" },
+    { name: "ALÜMİNYÜM SÜLFAT", href: "#features-tab-2" },
+    { name: "BAKIR SÜLFAT", href: "#features-tab-2" },
+    { name: "BARYUM KARBONAT", href: "#features-tab-2" },
+    { name: "BARYUM KLORÜR", href: "#features-tab-2" },
+    { name: "DEMİR 3 KLORÜR", href: "#features-tab-2" },
+    { name: "DEMİR SÜLFAT", href: "#features-tab-2" },
+    { name: "POTASYUM PERSÜLFAT", href: "#features-tab-2" },
+    { name: "S. HEGZAMETAFOSFAT", href: "#features-tab-2" },
+    { name: "SODYUM HİDROSÜLFİT", href: "#features-tab-2" },
+    { name: "SOD. METABİSÜLFİT", href: "#features-tab-2" },
+    { name: "BONCUK KOSTİK", href: "#features-tab-3" },
+    { name: "HAFİF SODA", href: "#features-tab-3" },
+    { name: "SUD KOSTİK SIVI %32", href: "#features-tab-3" },
+    { name: "SUD KOSTİK SIVI %48", href: "#features-tab-3" },
+    { name: "SUD KOSTİK PAYET - BONCUK %98", href: "#features-tab-3" },
+    { name: "SIVI AMONYAK", href: "#features-tab-3" },
+    { name: "SODYUM HİPOKLORİT", href: "#features-tab-3" },
+    { name: "BORAKS", href: "#features-tab-4" },
+    { name: "EDTA", href: "#features-tab-4" },
+    { name: "FORMALDEHİT", href: "#features-tab-4" },
+    { name: "KİREÇ", href: "#features-tab-4" },
+    { name: "PAC 10", href: "#features-tab-4" },
+    { name: "PAC 17", href: "#features-tab-4" },
+    { name: "POLİELEKTROLİT", href: "#features-tab-4" },
+    { name: "SODYUM SİYANÜR", href: "#features-tab-4" },
+    { name: "ÜRE", href: "#features-tab-4" },
+];
+
+  const searchInput = document.getElementById('searchTerm');
+  const suggestionsDiv = document.getElementById('suggestions');
+  const searchForm = document.getElementById('searchForm');
+
+  searchInput.addEventListener('input', function() {
+      const inputValue = this.value.toLowerCase();
+      suggestionsDiv.innerHTML = '';
+
+      if (inputValue) {
+          const filteredSuggestions = suggestions.filter(suggestion =>
+              suggestion.name.toLowerCase().startsWith(inputValue)
+          );
+
+          filteredSuggestions.forEach(suggestion => {
+              const suggestionElement = document.createElement('div');
+              suggestionElement.textContent = suggestion.name.toUpperCase(); // Metni büyük harfe dönüştür
+              suggestionElement.classList.add('suggestion-item');
+
+              // Öneriye tıklama olayı
+              suggestionElement.addEventListener('click', function() {
+                  // Hedef sekmeye geçiş yap
+                  const tabLink = document.querySelector(`a[href="${suggestion.href}"]`);
+                  if (tabLink) {
+                      tabLink.click(); // Hedef sekmeye git
+                  }
+
+                  document.getElementById("searchTerm").value = ""; // Arama çubuğunu temizle
+                  document.getElementById("suggestions").innerHTML = ""; // Önerileri temizle
+              });
+
+              suggestionsDiv.appendChild(suggestionElement);
+          });
+
+          // Öneri kutusunu göster
+          if (filteredSuggestions.length > 0) {
+              suggestionsDiv.style.display = 'block';
+          } else {
+              suggestionsDiv.style.display = 'none';
+          }
+      } else {
+          suggestionsDiv.style.display = 'none'; // Arama kutusu boşsa öneri kutusunu gizle
+      }
+  });
+
+  // Formun submit olayını engelle
+  searchForm.addEventListener('submit', function(event) {
+      event.preventDefault(); // Formun varsayılan davranışını iptal et
+  });
+</script>
+
+
+
+
+
+
+{% include "footer.html" %}
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src='{% static "assets/vendor/bootstrap/js/bootstrap.bundle.min.js" %}'></script>
+  <script src='{% static "assets/vendor/php-email-form/validate.js" %}'></script>
+  <script src='{% static "assets/vendor/aos/aos.js" %}'></script>
+  <script src='{% static "assets/vendor/glightbox/js/glightbox.min.js" %}'></script>
+  <script src='{% static "assets/vendor/imagesloaded/imagesloaded.pkgd.min.js" %}'></script>
+  <script src='{% static "assets/vendor/isotope-layout/isotope.pkgd.min.js" %}'></script>
+  <script src='{% static "assets/vendor/swiper/swiper-bundle.min.js" %}'></script>
+  <script src='{% static "assets/vendor/purecounter/purecounter_vanilla.js" %}'></script>
+
+  <!-- Main JS File -->
+  <script src='{% static "assets/js/main.js" %}'></script>
+
+  <script>
+    // Tüm tab bağlantılarına tıklama olayı ekleyin
+    document.querySelectorAll('.tab-link').forEach(function(link) {
+      link.addEventListener('click', function(e) {
+        e.preventDefault(); // Varsayılan davranışı durdur
+        const target = this.getAttribute('href'); // Hedef sekmeyi al
+  
+        // Hedef sekmeyi aç
+        const tabLink = document.querySelector(`a[data-bs-target="${target}"]`);
+        if (tabLink) {
+          // Tab'ı aktif yap
+          tabLink.classList.add('active');
+          tabLink.classList.add('show');
+  
+          // Diğer tab'ların aktifliğini kaldır
+          const allTabs = document.querySelectorAll('.nav-link');
+          allTabs.forEach(function(item) {
+            if (item !== tabLink) {
+              item.classList.remove('active', 'show');
+            }
+          });
+  
+          // Hedef sekmenin içeriğini göster
+          const allContent = document.querySelectorAll('.tab-pane');
+          allContent.forEach(function(content) {
+            content.classList.remove('active', 'show');
+          });
+          document.querySelector(target).classList.add('active', 'show');
+  
+          // Sayfayı hedef sekmeye kaydır
+          const targetElement = document.querySelector(target);
+          if (targetElement) {
+            const elementPosition = targetElement.getBoundingClientRect().top; // Hedefin pozisyonu
+            const fixedOffset = -288; // Kaydırmayı neredeyse sıfıra yaklaştırmak için yüksek bir değer (-200px yukarıda duracak)
+  
+            const offsetPosition = elementPosition + window.scrollY + fixedOffset; // Yeni pozisyon
+  
+            window.scrollTo({
+              top: offsetPosition,
+              behavior: 'smooth' // Yumuşak kaydırma
+            });
+          }
+        }
+      });
+    });
+  </script>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+</body>
+
+</html>

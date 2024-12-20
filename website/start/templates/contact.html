@@ -1,0 +1,203 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>İletişim - ASİT TİCARET</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href='{% static "assets/img/favicon.png" %}' rel="icon">
+  <link href='{% static "assets/img/apple-touch-icon.png" %}' rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href='{% static "assets/vendor/bootstrap/css/bootstrap.min.css" %}' rel="stylesheet">
+  <link href='{% static "assets/vendor/bootstrap-icons/bootstrap-icons.css" %}' rel="stylesheet">
+  <link href='{% static "assets/vendor/aos/aos.css" %}' rel="stylesheet">
+  <link href='{% static "assets/vendor/fontawesome-free/css/all.min.css" %}' rel="stylesheet">
+  <link href='{% static "assets/vendor/glightbox/css/glightbox.min.css" %}' rel="stylesheet">
+  <link href='{% static "assets/vendor/swiper/swiper-bundle.min.css" %}' rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href='{% static "assets/css/main.css" %}' rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: UpConstruction
+  * Template URL: https://bootstrapmade.com/upconstruction-bootstrap-construction-website-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="contact-page scrolled">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="/" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <a href="/" class=" d-flex align-items-center">
+          <img src='{% static "assets/img/unnamed.png" %}' alt="" style="width: 80%; height: 80%; margin-top: 4px;" >
+      </a>
+
+      <nav id="navmenu" class="navmenu" style="padding: 20px;">
+        <ul>
+          <li><a href="/">ANASAYFA</a></li>
+          <li><a href="/hakkinda/">HAKKIMIZDA</a></li>
+          <li><a href="/ekibimiz/">EKİBİMİZ</a></li>
+          <li class="dropdown"><a href="/kimyasallar/"><span>ÜRÜNLERİMİZ</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a ref="/kimyasallar#features-tab-1" class="tab-link">ASİTLER</a></li>
+              <li><a ref="/kimyasallar#features-tab-3" class="tab-link">ALKALİLER</a></li>
+              <li><a ref="/kimyasallar#features-tab-4" class="tab-link">DİĞER</a></li>
+            </ul>
+          </li>
+          <li><a href="/siparis/">ONLINE SİPARİŞ</a></li>
+          <li><a href="/galeri/">GALERİ</a></li>
+          <li><a href="/iletisim/" class="active" >İLETİŞİM</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background" style="background-image: url(/static/assets/img/chem.png);">
+      <div class="container position-relative">
+        <h1>İLETİŞİM</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="/">Anasayfa</a></li>
+            <li class="current">İletişim</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6">
+            <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="200">
+              <i class="bi bi-geo-alt"></i>
+              <h3>Merkez Ofis</h3>
+              <p>Topçular Mahallesi Armağan Sokak No:2</p>
+              <p>Eyüpsultan / İSTANBUL </p>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-telephone"></i>
+              <h3>Telefon</h3>
+              <p>0212 567 03 52</p>
+              <p>0212 567 03 53</p>
+              <p style="margin-bottom: 0px;"></p> <!-- Boşluk için boş p etiketi -->
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-item d-flex flex-column justify-content-center align-items-center" style="padding-bottom: 51px;" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-envelope"></i>
+              <h3>E-Posta</h3>
+              <p>info@asit.com.tr</p>
+            </div>
+          </div><!-- End Info Item -->
+
+        </div>
+
+        <div class="row gy-4 mt-1">
+          <div class="col-lg-12" data-aos="fade-up" data-aos-delay="300">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3327.23661825883!2d28.924291051556235!3d41.03697449600667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caba72474b89e3%3A0x4ea4cca204496dc7!2zVG9ww6d1bGFyLCBBcm1hxJ9hbiBTay4gTm86MiwgMzQwNTUgRXnDvHBzdWx0YW4vxLBzdGFuYnVs!5e1!3m2!1str!2str!4v1728833732509!5m2!1str!2str&maptype=roadmap" width="100%" height="400px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+          </div><!-- End Google Maps -->
+        
+          <!-- Depolarımız başlığından önce boşluk ekliyoruz -->
+          <div class="container section-title mt-5" style="padding-bottom: 20px;" data-aos="fade-up">
+            <h2>DEPOLARIMIZ</h2>
+          </div><!-- End Section Title -->
+
+          <div>
+          <div class="row">
+            <!-- Birinci öğe -->
+            <div class="col-lg-6 ">
+              <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-geo-alt"></i>
+                <h3>Esenyurt Depo</h3>
+                <p>Atatürk Mahallesi Orhan Veli Caddesi No:4 </p>
+                <p>Esenyurt / İSTANBUL</p>
+                <p>0212 549 21 90</p>
+                <iframe class="mt-4" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3009.5346507058457!2d28.62896085477125!3d41.03543578970917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b55f0062f90db3%3A0x156690d0a21d194a!2sAsit%20ticaret!5e0!3m2!1str!2str!4v1730481027261!5m2!1str!2str" width="100%" height="400px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+              </div>
+            
+            </div>
+            
+            <!-- İkinci öğe -->
+            <div class="col-lg-6">
+              <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-geo-alt"></i>
+                <h3>Pendik Depo</h3>
+                <p>Şeyhli Mahallesi Sanayi Caddesi No:12 (Kiram Sokak)</p>
+                <p>Kurtköy - Pendik / İSTANBUL</p>
+                <p>0216 377 00 31</p>
+
+                <iframe class="mt-4" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.5455768662255!2d29.284040584224368!3d40.90306139753343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cadbae14684809%3A0x226aa3b5c0c9c9c3!2s%C5%9Eeyhli%2C%20Kiram%20Sk.%20No%3A12%2C%2034906%20Pendik%2F%C4%B0stanbul!5e1!3m2!1str!2str!4v1728849679272!5m2!1str!2str" width="100%" height="400px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          
+                
+            </div>
+          </div>
+
+
+          </div>
+
+      </div>
+    </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  {% include "footer.html" %}
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src='{% static "assets/vendor/bootstrap/js/bootstrap.bundle.min.js" %}'></script>
+  <script src='{% static "assets/vendor/php-email-form/validate.js" %}'></script>
+  <script src='{% static "assets/vendor/aos/aos.js" %}'></script>
+  <script src='{% static "assets/vendor/glightbox/js/glightbox.min.js" %}'></script>
+  <script src='{% static "assets/vendor/imagesloaded/imagesloaded.pkgd.min.js" %}'></script>
+  <script src='{% static "assets/vendor/isotope-layout/isotope.pkgd.min.js" %}'></script>
+  <script src='{% static "assets/vendor/swiper/swiper-bundle.min.js" %}'></script>
+  <script src='{% static "assets/vendor/purecounter/purecounter_vanilla.js" %}'></script>
+
+  <!-- Main JS File -->
+  <script src='{% static "assets/js/main.js" %}'></script>
+
+</body>
+
+</html>

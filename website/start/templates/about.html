@@ -1,0 +1,224 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Hakkımızda - ASİT TİCARET</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href='{% static "assets/img/favicon.png" %}' rel="icon">
+  <link href='{% static "assets/img/apple-touch-icon.png" %}' rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href='{% static "assets/vendor/bootstrap/css/bootstrap.min.css" %}' rel="stylesheet">
+  <link href='{% static "assets/vendor/bootstrap-icons/bootstrap-icons.css" %}' rel="stylesheet">
+  <link href='{% static "assets/vendor/aos/aos.css" %}' rel="stylesheet">
+  <link href='{% static "assets/vendor/fontawesome-free/css/all.min.css" %}' rel="stylesheet">
+  <link href='{% static "assets/vendor/glightbox/css/glightbox.min.css" %}' rel="stylesheet">
+  <link href='{% static "assets/vendor/swiper/swiper-bundle.min.css" %}' rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href='{% static "assets/css/main.css" %}' rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: UpConstruction
+  * Template URL: https://bootstrapmade.com/upconstruction-bootstrap-construction-website-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="about-page scrolled">
+
+  <header id="header" class="header d-flex align-items-center fixed-top" style="padding: 0;">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="/" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <a href="/" class=" d-flex align-items-center">
+          <img src='{% static "assets/img/unnamed.png" %}' alt="" style="width: 80%; height: 80%; margin-top: 4px;" >
+      </a>
+      
+      <nav id="navmenu" class="navmenu" style="padding: 20px;">
+        <ul>
+          <li><a href="/">ANASAYFA</a></li>
+          <li><a href="/hakkinda/" class="active">HAKKIMIZDA</a></li>
+          <li><a href="/ekibimiz/">EKİBİMİZ</a></li>
+          <li class="dropdown"><a href="/kimyasallar/"><span>ÜRÜNLERİMİZ</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a ref="/kimyasallar#features-tab-1" class="tab-link">ASİTLER</a></li>
+              <li><a ref="/kimyasallar#features-tab-3" class="tab-link">BAZLAR</a></li>
+              <li><a ref="/kimyasallar#features-tab-4" class="tab-link">DİĞER</a></li>
+            </ul>
+          </li>
+          <li><a href="/siparis/">ONLINE SİPARİŞ</a></li>
+          <li><a href="/galeri/">GALERİ</a></li>
+          <li><a href="/iletisim/">İLETİŞİM</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background" style="background-image: url(/static/assets/img/chem.png);">
+      <div class="container position-relative">
+        <h1>HAKKIMIZDA</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="/">Anasayfa</a></li>
+            <li class="current">Hakkımızda</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container">
+
+        <div class="row position-relative">
+
+          <div class="col-lg-7 about-img" data-aos="zoom-out" data-aos-delay="200">
+            <img src='{% static "assets/img/about2.jpg" %}'>
+          </div>
+
+          <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
+            <h2 class="inner-title">ASİT TİCARET LTD.ŞTİ. </h2>
+            <div class="our-story">
+              <h4>1958'DEN BERİ</h4>
+              <h3>HİKAYEMİZ</h3>
+              <p style="text-align: justify;">1958 yılında Asit Ticaret - Ziya ve İhsan Akdeniz Kollektif Şirketi olarak başlayan yolculuğumuz, 1970 senesinden itibaren Asit Ticaret Limited Şirketi ismiyle bugüne kadar devam etmiştir. Geçen 66 yıllık süre içerisinde gerek yurt dışındaki gerekse yurt içindeki üreticilerden en kaliteli ürünleri tedarik edip, bunları <strong>bünyemizde herhangi bir değişime uğratmadan</strong> son kullanıcıya ulaştırmak temel misyonumuz olmuştur. Kurucumuz İhsan Akdeniz’in 2020 yılında vefatının ardından şirketimiz 2. nesil tarafından, her anlamda “Kaliteli Ticaret” ilkesiyle yönetilmeye devam etmektedir.</p>
+
+              
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Alt Services Section -->
+    <section id="alt-services" class="alt-services section">
+
+      <div class="container">
+        <h2 class="text-center mb-2">MİSYONUMUZ</h2> <!-- Başlık -->
+        <hr class="my-3"> <!-- Çizgi, başlık ile altındaki içerik arasında boşluk için my-3 sınıfı kullanıldı -->
+        <div class="row">
+            <div class="col-lg-4 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="50">
+                <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="50">
+                    <i class="bi bi-easel flex-shrink-0"></i>
+                    <div>
+                        <h4><a class="stretched-link">Müşteri Taleplerine Yönelik Gelişmeler</a></h4>
+                        <p>1958'den beri müşteri kitlesinin talepleri doğrultusunda çeşitliliği artan kimyasal madde taleplerini karşılamak amacıyla depolama, nakliye ve lojistik kapasitesi geliştirilmiştir. Bu yapı, 24 saat içerisinde en hızlı hizmeti verecek şekilde düzenlenmiştir.</p>
+                    </div>
+    
+    
+                </div><!-- End Icon Box -->
+            </div>
+    
+            <div class="col-lg-4 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="50">
+                <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="50">
+                    <i class="bi bi-patch-check flex-shrink-0"></i>
+                    <div>
+                        <h4><a  class="stretched-link">Müşteri Memnuniyeti</a></h4>
+                        <p>Ticari faaliyetlerinde daima "MÜŞTERİ HAKLIDIR" ana teması uygulanmış, müşteri memnuniyeti esas alınmıştır. Gelişen sanayi ile paralel olarak kimyasal madde taleplerinin miktar ve özelliklerinin hızla artması nedeniyle Asit Ticaret bünyesinde kimya mühendisleri seviyesinde pazarlama ve satış ekibi oluşturulmuştur. Kurumsallaşma yönünde ciddi adımlar atılmıştır.</p>
+                    </div>
+                </div><!-- End Icon Box -->
+            </div>
+    
+            <div class="col-lg-4 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="50">
+                <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="50">
+                    <i class="bi bi-brightness-high flex-shrink-0"></i>
+                    <div>
+                        <h4><a class="stretched-link">Kullanılmayan Kimyasalların Değerlendirilmesi</a></h4>
+                        <p>Asit Ticaret, satışını yaptığı malzemelerin yanı sıra müşterilerindeki kullanılmayan ve stok fazlası kimyasalların değerlendirilmesinde de hizmet vermektedir.</p>
+                    </div>
+                </div><!-- End Icon Box -->
+            </div>
+        </div><!-- End Row -->
+    
+        <div class="row">
+            <div class="col-lg-4 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="50">
+                <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="50">
+                    <i class="bi bi-cart flex-shrink-0"></i>
+                    <div>
+                        <h4><a class="stretched-link">Satış Politikası</a></h4>
+                        <p>Genel satış politikasında, kimyasal maddelerin piyasada azalıp çoğalmasıyla ilgili fiyat artışlarını dikkate almadan müşteri taleplerini en uygun şartlarda istikrarlı bir şekilde karşılama prensibi 50 yıldır değişmeden sürdürülmektedir.</p>
+                    </div>
+                </div><!-- End Icon Box -->
+            </div>
+    
+            <div class="col-lg-4 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="50">
+                <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="50">
+                    <i class="bi bi-star flex-shrink-0"></i>
+                    <div>
+                        <h4><a class="stretched-link">Geri Bildirim ve İyileştirme</a></h4>
+                        <p>Firma olarak aksayan yönlerimiz ve kusurlarımız olduğunda, bunların bize "Dost acı söyler." mantığıyla bildirilmesi, daha iyi hizmet sunabilmemiz açısından en büyük desteğimiz olacaktır.</p>
+                    </div>
+                </div><!-- End Icon Box -->
+            </div>
+    
+            <div class="col-lg-4 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="50">
+                <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="50">
+                    <i class="bi bi-check-circle flex-shrink-0"></i>
+                    <div>
+                        <h4><a  class="stretched-link">Müşteri Memnuniyeti Bilinci</a></h4>
+                        <p>Asit Ticaret, asıl sermayesinin "MÜŞTERİ MEMNUNİYETİ" olduğu bilinci ve inancıyla daha iyi hizmetler sunma heyecanıyla yola devam etmektedir.</p>
+                    </div>
+                </div><!-- End Icon Box -->
+            </div>
+        </div><!-- End Row -->
+    </div>
+    
+
+
+      </div>
+
+    </section><!-- /Alt Services Section -->
+
+  
+  </main>
+
+  {% include "footer.html" %}
+
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src='{% static "assets/vendor/bootstrap/js/bootstrap.bundle.min.js" %}'></script>
+  <script src='{% static "assets/vendor/php-email-form/validate.js" %}'></script>
+  <script src='{% static "assets/vendor/aos/aos.js" %}'></script>
+  <script src='{% static "assets/vendor/glightbox/js/glightbox.min.js" %}'></script>
+  <script src='{% static "assets/vendor/imagesloaded/imagesloaded.pkgd.min.js" %}'></script>
+  <script src='{% static "assets/vendor/isotope-layout/isotope.pkgd.min.js" %}'></script>
+  <script src='{% static "assets/vendor/swiper/swiper-bundle.min.js" %}'></script>
+  <script src='{% static "assets/vendor/purecounter/purecounter_vanilla.js" %}'></script>
+
+  <!-- Main JS File -->
+  <script src='{% static "assets/js/main.js" %}'></script>
+
+</body>
+
+</html>

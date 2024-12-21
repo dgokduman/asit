@@ -32,7 +32,7 @@ STATICFILES_DIRS = [
 
 # Diğer ayarlar...
 
-DEBUG = False  # Geliştirme ortamında True, üretimde False olmalı
+DEBUG = True  # Geliştirme ortamında True, üretimde False olmalı
 ALLOWED_HOSTS = ['asit.onrender.com', 'localhost', '127.0.0.1','www.asit.com.tr']
 
 

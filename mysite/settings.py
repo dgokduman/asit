@@ -14,31 +14,37 @@ from pathlib import Path
 # settings.py
 
 import os
-
-
-
-
-import os
 from pathlib import Path
+import os
+
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+# Statik dosyalar için URL ve dizin ayarları
+STATIC_URL = 'start/static/'  # Statik dosyalara URL üzerinden erişim için
+
+# collectstatic ile tüm statik dosyaların toplanacağı dizin (Üretim ortamında kullanılır)
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+# Uygulama içindeki statik dosyaların dizinleri (Geliştirme ortamı için kullanılır)
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'start', 'static'),
+]
+
+# Diğer ayarlar...
+
+DEBUG = True  # Geliştirme ortamında True, üretimde False olmalı
+ALLOWED_HOSTS = ['asit.onrender.com', 'localhost', '127.0.0.1']
+
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 STATIC_URL = '/static/'  # Statik dosyalara URL üzerinden erişim için
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # Statik dosyaların toplanacağı ana dizin
-
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'start', 'static'),  # Uygulamanızın kendi statik dosyaları
-]
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = "django-insecure-@nxzry13f4p232xq&evo9+fnwsyo3naozo(s!h+59sy3(k#3f8"
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
-ALLOWED_HOSTS = ['asit.onrender.com']
-
-
 # Application definition
 
 INSTALLED_APPS = [

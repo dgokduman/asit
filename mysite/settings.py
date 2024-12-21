@@ -33,7 +33,7 @@ STATICFILES_DIRS = [
 # Diğer ayarlar...
 
 DEBUG = True  # Geliştirme ortamında True, üretimde False olmalı
-ALLOWED_HOSTS = ['asit.onrender.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['asit.onrender.com', 'localhost', '127.0.0.1','www.asit.com.tr']
 
 
 BASE_DIR = Path(__file__).resolve().parent.parent

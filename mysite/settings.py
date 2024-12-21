@@ -20,7 +20,7 @@ import os
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Statik dosyalar için URL ve dizin ayarları
-STATIC_URL = 'start/static/'  # Statik dosyalara URL üzerinden erişim için
+STATIC_URL = '/static/'  # Statik dosyalara URL üzerinden erişim için
 
 # collectstatic ile tüm statik dosyaların toplanacağı dizin (Üretim ortamında kullanılır)
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
@@ -57,8 +57,10 @@ INSTALLED_APPS = [
     'start.apps.StartConfig',
 ]
 
+# WhiteNoise'u aktifleştirmek için ayarlar
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
+    "whitenoise.middleware.WhiteNoiseMiddleware",  # WhiteNoise ekleniyor
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
@@ -66,6 +68,9 @@ MIDDLEWARE = [
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
+
+# WhiteNoise ile sıkıştırılmış ve önbelleklenmiş dosyaları kullanmak için
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 ROOT_URLCONF = "mysite.urls"
 

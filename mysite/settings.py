@@ -18,14 +18,17 @@ import os
 
 
 
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
+import os
+from pathlib import Path
+
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-# Media ayarları
-MEDIA_URL = '/media/'  # Tarayıcıya fotoğraf URL'ini nasıl göstereceğini söyler
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')  # Dosyaların depolandığı yol
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
+STATIC_URL = '/static/'  # Statik dosyalara URL üzerinden erişim için
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # Statik dosyaların toplanacağı ana dizin
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'start', 'static'),  # Uygulamanızın kendi statik dosyaları
+]
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = "django-insecure-@nxzry13f4p232xq&evo9+fnwsyo3naozo(s!h+59sy3(k#3f8"

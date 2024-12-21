@@ -44,7 +44,7 @@ STATIC_URL = '/static/'  # Statik dosyalara URL üzerinden erişim için
 SECRET_KEY = "django-insecure-@nxzry13f4p232xq&evo9+fnwsyo3naozo(s!h+59sy3(k#3f8"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 # Application definition
 
 INSTALLED_APPS = [

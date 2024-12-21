@@ -1,12 +1,12 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Product, Category
-from django.http import HttpResponseRedirect
-from django.urls import reverse
+from django.shortcuts import redirect
 
-def custom_page_not_found(request, exception):
-    # Ana sayfaya yönlendirme
-    return HttpResponseRedirect(reverse('index'))  # 'home', ana sayfanızın URL name'idir.
+def view_404(request, exception=None):
+    # make a redirect to homepage
+    # you can use the name of url or just the plain link
+    return redirect('/') # or redirect('name-of-index-url')
 
 def index(request):
     return render(request,"index.html")

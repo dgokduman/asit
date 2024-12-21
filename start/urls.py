@@ -13,3 +13,5 @@ urlpatterns = [
     path("galeri/", views.gallery, name="gallery"),
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
+handler404 = 'start.views.view_404' 
+# replace `myapp` with your app's name where the above view is located

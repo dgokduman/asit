@@ -12,3 +12,4 @@ urlpatterns = [
     path("siparis/", views.products, name="products"),
     path("galeri/", views.gallery, name="gallery"),
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+

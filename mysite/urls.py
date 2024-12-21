@@ -20,6 +20,11 @@ from django.urls import include, path
 from django.conf import settings
 from django.conf.urls.static import static
 
+from django.conf.urls import handler404
+from start.views import custom_page_not_found
+
+handler404 = custom_page_not_found
+
 urlpatterns = [
     path("", include("start.urls")),
     path("admin/", admin.site.urls),

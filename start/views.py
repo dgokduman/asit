@@ -1,7 +1,12 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Product, Category
+from django.http import HttpResponseRedirect
+from django.urls import reverse
 
+def custom_page_not_found(request, exception):
+    # Ana sayfaya yönlendirme
+    return HttpResponseRedirect(reverse('index'))  # 'home', ana sayfanızın URL name'idir.
 
 def index(request):
     return render(request,"index.html")

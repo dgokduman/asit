@@ -13,7 +13,7 @@ class Product(models.Model):
     price = models.DecimalField(max_digits=10, decimal_places=2)
     stock = models.IntegerField()
     image = models.ImageField(upload_to='products/', default='/media/products/example.jpg')  # Varsayılan görsel yolunu belirtin
-    whatsapp_url = models.URLField()
+    whatsapp_url = models.URLField(default='https://wa.me/905559611177')
     is_active = models.BooleanField(default=True)
     updated_at = models.DateTimeField(auto_now=True)
     category = models.ForeignKey(Category, related_name='products', on_delete=models.CASCADE)  # Kategori alanı
